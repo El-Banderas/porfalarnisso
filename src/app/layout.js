@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import '@mantine/core/styles.css';
-import { createTheme, MantineProvider } from '@mantine/core';
+import "@mantine/core/styles.css";
+import { createTheme, MantineProvider } from "@mantine/core";
 
-import Navbar from '@/components/Navbar';
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,18 +25,15 @@ const theme = createTheme({
   /** Put your mantine theme override here */
 });
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          <MantineProvider theme={theme}>
-         <Navbar />
-        
-        {children}
-        
-    </MantineProvider>
+        <MantineProvider theme={theme}>
+          <Navbar />
+
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
