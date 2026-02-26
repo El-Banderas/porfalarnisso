@@ -1,34 +1,30 @@
 "use client";
 
-import { IconChevronDown, IconSeedlingFilled } from '@tabler/icons-react';
+import { IconChevronDown, IconSeedlingFilled, IconBrandInstagram } from '@tabler/icons-react';
 
 import { Burger, Center, Container, Group, Menu } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Navbar.module.css';
 
 const links = [
-  { link: '/about', label: 'Features' },
+  { link: '/about', label: 'Sobre mim' },
   {
     link: '#1',
-    label: 'Learn',
+    label: 'Adultos',
     links: [
-      { link: '/docs', label: 'Documentation' },
-      { link: '/resources', label: 'Resources' },
-      { link: '/community', label: 'Community' },
-      { link: '/blog', label: 'Blog' },
+      { link: '/s1', label: 'Opção 1' },
+      { link: '/s2', label: 'Opção 2' },
     ],
   },
-  { link: '/about', label: 'About' },
-  { link: '/pricing', label: 'Pricing' },
-  {
+{
     link: '#2',
-    label: 'Support',
+    label: 'Crianças',
     links: [
-      { link: '/faq', label: 'FAQ' },
-      { link: '/demo', label: 'Book a demo' },
-      { link: '/forums', label: 'Forums' },
+      { link: '/s1', label: 'Opção 1' },
+      { link: '/s2', label: 'Opção 2' },
     ],
   },
+  { link: '/co-therapy', label: 'Co-Terapia' },
 ];
 
 export default function Navbar() {
@@ -86,6 +82,8 @@ export default function Navbar() {
             hiddenFrom="sm"
             aria-label="Toggle navigation"
           />
+
+                <IconBrandInstagram size={32} stroke={1.5} />
         </div>
       </Container>
     </header>

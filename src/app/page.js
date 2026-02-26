@@ -4,28 +4,25 @@ import styles from "./page.module.css";
 import { Button, Tooltip } from '@mantine/core';
 import { IconCheck, IconCopy } from '@tabler/icons-react';
 
+import mainPage1 from 'public/images/MainPage1.png'
+import AboutMe from '@/components/mainPage/AboutMe.js'
+// Read this!!!
+// https://eastondev.com/blog/en/posts/dev/20251219-nextjs-image-optimization/#three-major-pitfalls-of-regular-img-tags 
+// It's important
 export default function Home() {
   return (
-    <div className={styles.page}>
       <main className={styles.main}>
-        Hello
-<Button
-        variant="light"
-        rightSection={
-          true ? (
-            <IconCheck size={20} stroke={1.5} />
-          ) : (
-            <IconCopy size={20} stroke={1.5} />
-          )
-        }
-        radius="xl"
-        size="md"
-        pr={14}
-        h={48}
-        styles={{ section: { marginLeft: 22 } }}
-      >Conteúdo</Button>
-      <h1>OLS</h1>
+        <div>
+
+          <Image
+      src={mainPage1}
+      alt="Office image"
+      fill={true}
+      className={styles.image}
+    />
+
+      <AboutMe />
+</div>
       </main>
-    </div>
   );
 }

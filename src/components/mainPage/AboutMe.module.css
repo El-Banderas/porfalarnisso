@@ -1,0 +1,8 @@
+
+.section {
+    position: relative;
+  z-index: 10; /* Ensures it's above the image */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a background for readability */
+  margin-top: auto; /* Pushes the AboutMe section to the bottom */
+}
