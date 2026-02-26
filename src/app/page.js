@@ -14,7 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <div>
 
-          <Image
+              <Image
       src={mainPage1}
       alt="Office image"
       fill={true}
