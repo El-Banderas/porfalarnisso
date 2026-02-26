@@ -1,30 +1,34 @@
 "use client";
 
-import { IconChevronDown, IconSeedlingFilled, IconBrandInstagram } from '@tabler/icons-react';
+import {
+  IconChevronDown,
+  IconSeedlingFilled,
+  IconBrandInstagram,
+} from "@tabler/icons-react";
 
-import { Burger, Center, Container, Group, Menu } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import classes from './Navbar.module.css';
+import { Burger, Center, Container, Group, Menu } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import classes from "./Navbar.module.css";
 
 const links = [
-  { link: '/about', label: 'Sobre mim' },
+  { link: "/about", label: "Sobre mim" },
   {
-    link: '#1',
-    label: 'Adultos',
+    link: "#1",
+    label: "Adultos",
     links: [
-      { link: '/s1', label: 'Opção 1' },
-      { link: '/s2', label: 'Opção 2' },
+      { link: "/s1", label: "Opção 1" },
+      { link: "/s2", label: "Opção 2" },
     ],
   },
-{
-    link: '#2',
-    label: 'Crianças',
+  {
+    link: "#2",
+    label: "Crianças",
     links: [
-      { link: '/s1', label: 'Opção 1' },
-      { link: '/s2', label: 'Opção 2' },
+      { link: "/s1", label: "Opção 1" },
+      { link: "/s2", label: "Opção 2" },
     ],
   },
-  { link: '/co-therapy', label: 'Co-Terapia' },
+  { link: "/co-therapy", label: "Co-Terapia" },
 ];
 
 export default function Navbar() {
@@ -37,7 +41,12 @@ export default function Navbar() {
 
     if (menuItems) {
       return (
-        <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
+        <Menu
+          key={link.label}
+          trigger="hover"
+          transitionProps={{ exitDuration: 0 }}
+          withinPortal
+        >
           <Menu.Target>
             <a
               href={link.link}
@@ -83,7 +92,7 @@ export default function Navbar() {
             aria-label="Toggle navigation"
           />
 
-                <IconBrandInstagram size={32} stroke={1.5} />
+          <IconBrandInstagram size={32} stroke={1.5} />
         </div>
       </Container>
     </header>
