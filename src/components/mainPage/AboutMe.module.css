@@ -1,8 +1,49 @@
 
 .section {
-    position: relative;
-  z-index: 10; /* Ensures it's above the image */
+  position: relative;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a background for readability */
-  margin-top: auto; /* Pushes the AboutMe section to the bottom */
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100vw;
+  height: 70vh;
+}
+
+.title{
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.img{
+  position: relative;
+  background-color: red;
+  margin-left: 0; 
+  padding-left: 0; 
+width:30vw;
+  aspect-ratio: 1 / 1;
+}
+
+.rightContent{
+  margin-left: 5%;
+  width: 40%;
+}
+
+.btn{
+  width: 10vw;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 50vw;
+  }
+
+.text{
+  width: 70%;
+  margin-left: 0%;
+  margin-top: 2%;
+}
+
+.btn{
+  width: 50vw;
+}
 }

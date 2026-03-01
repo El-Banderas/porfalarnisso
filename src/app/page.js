@@ -13,13 +13,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
+        <div className={styles.imgContainer}>
         <Image
           src={mainPage1}
           alt="Office image"
-          fill={true}
           className={styles.image}
+              style={{ objectFit: "cover"}}
+              
         />
-
+</div>
         <AboutMe />
       </div>
     </main>
