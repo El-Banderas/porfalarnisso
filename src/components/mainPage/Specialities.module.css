@@ -1,0 +1,14 @@
+.section{
+  background-color: var(--mantine-color-my-orange-5) ;
+
+}
+.title{
+  color: red;
+}
+@media (max-width: 768px) {
+  .img {
+    width: 50vw;
+  }
+
+
+}

@@ -73,12 +73,12 @@ export default function Navbar() {
       >
         {link.label}
       </a>
-    );
-  });
+    )
+  })
 
   return (
     <header className={classes.header}>
-      <Container fluid>
+      <Container fluid color="my-orange">
         <div className={classes.inner}>
           <IconSeedlingFilled size={28} />
           <Group gap={5} visibleFrom="sm">
