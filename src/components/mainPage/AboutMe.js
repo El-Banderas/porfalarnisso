@@ -1,6 +1,6 @@
 import Image from "next/image";
 import aboutMeImage from "public/images/MainPage_AboutMe.png";
-import { Flex, Button } from '@mantine/core';
+import { Flex, Button } from "@mantine/core";
 import classes from "./AboutMe.module.css";
 export default function AboutMe() {
   return (
