@@ -26,5 +26,5 @@ export default function Home() {
         <Specialisties />
       </div>
     </main>
-  )
+  );
 }

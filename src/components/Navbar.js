@@ -73,8 +73,8 @@ export default function Navbar() {
       >
         {link.label}
       </a>
-    )
-  })
+    );
+  });
 
   return (
     <header className={classes.header}>

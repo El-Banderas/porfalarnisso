@@ -23,8 +23,19 @@ export const metadata = {
 
 const theme = createTheme({
   colors: {
-    'my-orange': ['#744310', '#93513a', '#b06347', '#ce7554', '#ed8762', '#f09472', '#f3a082', '#f6ac92', '#f6ac92', '#fac4b1'],
-    'font-white': Array(10).fill('#fffbf5')
+    "my-orange": [
+      "#744310",
+      "#93513a",
+      "#b06347",
+      "#ce7554",
+      "#ed8762",
+      "#f09472",
+      "#f3a082",
+      "#f6ac92",
+      "#f6ac92",
+      "#fac4b1",
+    ],
+    "font-white": Array(10).fill("#fffbf5"),
   },
 });
 
@@ -39,5 +50,5 @@ export default function RootLayout({ children }) {
         </MantineProvider>
       </body>
     </html>
-  )
+  );
 }
