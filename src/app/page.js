@@ -7,6 +7,7 @@ import { IconCheck, IconCopy } from "@tabler/icons-react";
 import mainPage1 from "public/images/MainPage1.png";
 import AboutMe from "@/components/mainPage/AboutMe.js";
 import Specialisties from "@/components/mainPage/Specialities.js";
+import Footer from "@/components/common/Footer.js";
 // Read this!!!
 // https://eastondev.com/blog/en/posts/dev/20251219-nextjs-image-optimization/#three-major-pitfalls-of-regular-img-tags
 // It's important
@@ -24,6 +25,7 @@ export default function Home() {
         </div>
         <AboutMe />
         <Specialisties />
+        <Footer />
       </div>
     </main>
   )

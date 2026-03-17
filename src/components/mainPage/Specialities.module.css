@@ -1,9 +1,17 @@
 .section{
+  position: relative;
   background-color: var(--mantine-color-my-orange-5) ;
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
 
 }
 .title{
-  color: red;
+  color: whitesmoke;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 @media (max-width: 768px) {
   .img {

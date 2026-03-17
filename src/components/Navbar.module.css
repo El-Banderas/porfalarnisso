@@ -27,3 +27,11 @@
 .linkLabel {
   margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+  .link {
+    padding: 12px;
+    border-bottom: 1px solid var(--mantine-color-gray-1);
+    width: 100%;
+  }
+}

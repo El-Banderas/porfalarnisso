@@ -6,7 +6,7 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 
-import { Burger, Center, Container, Group, Menu } from "@mantine/core";
+import { Burger, Center, Container, Group, Menu, Drawer, Stack, Accordion } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Navbar.module.css";
 
@@ -32,12 +32,14 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
       <Menu.Item key={item.link}>{item.label}</Menu.Item>
     ));
+
+
 
     if (menuItems) {
       return (
@@ -76,6 +78,44 @@ export default function Navbar() {
     )
   })
 
+const mobileItems = links.map((link) => {
+  if (link.links) {
+    return (
+      <Accordion key={link.label} chevronPosition="right" variant="separated">
+        <Accordion.Item value={link.label} style={{ border: 'none' }}>
+          <Accordion.Control >
+            {link.label}
+          </Accordion.Control>
+          <Accordion.Panel>
+            <Stack gap={5}>
+              {link.links.map((subLink) => (
+                <a
+                  key={subLink.link}
+                  href={subLink.link}
+                  style={{ paddingLeft: '24px', fontSize: 'var(--mantine-font-size-md)' }}
+                  onClick={close} // Closes drawer on click
+                >
+                  {subLink.label}
+                </a>
+              ))}
+            </Stack>
+          </Accordion.Panel>
+        </Accordion.Item>
+      </Accordion>
+    );
+  }
+
+  return (
+    <a
+      key={link.label}
+      href={link.link}
+      className={classes.link}
+      onClick={close}
+    >
+      {link.label}
+    </a>
+  );
+});
   return (
     <header className={classes.header}>
       <Container fluid color="my-orange">
@@ -91,7 +131,19 @@ export default function Navbar() {
             hiddenFrom="sm"
             aria-label="Toggle navigation"
           />
-
+          <Drawer
+            opened={opened}
+            onClose={close}
+            size="100%"
+            padding="md"
+            title="Menu"
+            hiddenFrom="sm"
+            zIndex={1000000}
+          >
+            <Stack gap={10}>
+              {mobileItems}
+            </Stack>
+          </Drawer>
           <IconBrandInstagram size={32} stroke={1.5} />
         </div>
       </Container>
