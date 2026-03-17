@@ -75,8 +75,8 @@ export default function Navbar() {
       >
         {link.label}
       </a>
-    )
-  })
+    );
+  });
 
 const mobileItems = links.map((link) => {
   if (link.links) {

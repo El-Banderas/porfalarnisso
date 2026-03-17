@@ -24,5 +24,5 @@ className={classes.section2}
       </Flex>
             </Flex>
     </section>
-  )
+  );
 }
