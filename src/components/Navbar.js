@@ -130,6 +130,7 @@ const mobileItems = links.map((link) => {
             size="sm"
             hiddenFrom="sm"
             aria-label="Toggle navigation"
+            color="white"
           />
           <Drawer
             opened={opened}
