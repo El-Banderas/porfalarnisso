@@ -20,7 +20,7 @@ import { useDisclosure } from "@mantine/hooks";
 import classes from "./Navbar.module.css";
 
 const links = [
-  { link: "/about", label: "Sobre mim" },
+  { link: "/about-me", label: "Sobre mim" },
   {
     link: "#1",
     label: "Adultos",
@@ -60,7 +60,6 @@ export default function Navbar() {
             <a
               href={link.link}
               className={classes.link}
-              onClick={(event) => event.preventDefault()}
             >
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
@@ -78,7 +77,6 @@ export default function Navbar() {
         key={link.label}
         href={link.link}
         className={classes.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
       </a>
@@ -128,7 +126,12 @@ export default function Navbar() {
     <header className={classes.header}>
       <Container fluid color="my-orange">
         <div className={classes.inner}>
-          <IconSeedlingFilled size={28} />
+<a
+              href={"/"}
+            >
+          <IconSeedlingFilled size={28} href={"/asd"} />
+            </a>
+              
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>
