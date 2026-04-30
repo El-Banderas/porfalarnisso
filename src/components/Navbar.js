@@ -57,10 +57,7 @@ export default function Navbar() {
           withinPortal
         >
           <Menu.Target>
-            <a
-              href={link.link}
-              className={classes.link}
-            >
+            <a href={link.link} className={classes.link}>
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size={14} stroke={1.5} />
@@ -73,11 +70,7 @@ export default function Navbar() {
     }
 
     return (
-      <a
-        key={link.label}
-        href={link.link}
-        className={classes.link}
-      >
+      <a key={link.label} href={link.link} className={classes.link}>
         {link.label}
       </a>
     );
@@ -126,12 +119,10 @@ export default function Navbar() {
     <header className={classes.header}>
       <Container fluid color="my-orange">
         <div className={classes.inner}>
-<a
-              href={"/"}
-            >
-          <IconSeedlingFilled size={28} href={"/asd"} />
-            </a>
-              
+          <a href={"/"}>
+            <IconSeedlingFilled size={28} href={"/asd"} />
+          </a>
+
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>

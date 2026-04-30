@@ -5,9 +5,9 @@ import photo from "public/images/AboutMe/photo.png";
 
 export default function Home() {
   return (
-    <main className={styles.main} >
+    <main className={styles.main}>
       <div>
-<div className={styles.imgContainer}>
+        <div className={styles.imgContainer}>
           <Image
             src={firstImg}
             alt="Office image"
@@ -16,18 +16,12 @@ export default function Home() {
           />
         </div>
         <section className={styles.flexVertical}>
-
-     <h1>Sobre mim</h1>
-<div className={styles.selfImg}>
-          <Image
-            src={photo}
-            alt="Sara image"
-            className={styles.selfImg}
-          />
-        </div>
- 
+          <h1>Sobre mim</h1>
+          <div className={styles.selfImg}>
+            <Image src={photo} alt="Sara image" className={styles.selfImg} />
+          </div>
         </section>
-     </div>
+      </div>
     </main>
   );
 }
