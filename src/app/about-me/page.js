@@ -8,7 +8,7 @@ import ProfessionalExperience from "@/app/about-me/ProfessionalExperience"
 
 export default function Home() {
   return (
-    <main className={styles.main} >
+    <main className={styles.main}>
       <div>
         <div className={styles.imgContainer}>
           <Image
