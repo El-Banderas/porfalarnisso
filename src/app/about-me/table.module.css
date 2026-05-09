@@ -1,0 +1,22 @@
+.main{
+  width: 70%;
+  font-size: large;
+}
+.table{
+  border-spacing: 40px 00px;
+  padding-top: 0px;
+}
+.yearsCol{
+  width: 30%;
+}
+.formationCol{
+  text-align: left;
+}
+.table thead th {
+  padding-bottom: 5%; /* Adjust this value for more space */
+}
+
+.tbody tr td {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
