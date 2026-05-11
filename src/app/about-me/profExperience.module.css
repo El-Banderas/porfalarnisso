@@ -1,26 +1,15 @@
 .main{
-  width: 50%;
+  width: 90%;
   font-size: large;
+  margin: 0 auto;
 }
 
-.card{
-  width: 30vw;
-}
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Or whatever height you need */
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.cards{
   display: flex;
-  align-items: center;     /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  color: red;            /* Contrast against the image */
+  flex-direction: row;
+  gap: 10px;
+}
+.card{
+  flex: 1;
 }

@@ -5,19 +5,16 @@ import photo from "public/images/AboutMe/photo.png";
 import logo from "public/images/logo.png";
 import FormationTable from "@/app/about-me/formationTable"
 import ProfessionalExperience from "@/app/about-me/ProfessionalExperience"
+import ImageWText from "@/components/ImageWText/ImageWText";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <div className={styles.imgContainer}>
-          <Image
-            src={firstImg}
-            alt="Office image"
-            className={styles.image}
-            style={{ objectFit: "cover" }}
+          <ImageWText
+            image={firstImg}
+            title={"Sobre mim"}
           />
-        </div>
         <section className={`${styles.flexVertical} ${styles.section}`}>
 
           <h1>Sobre mim</h1>
