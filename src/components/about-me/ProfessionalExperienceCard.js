@@ -1,17 +1,15 @@
-'use client';
+"use client";
 import Image from "next/image";
 import styles from "./profExperienceCard.module.css";
-import ballon from 'public/images/AboutMe/card/speakingBallon.png'
+import ballon from "public/images/AboutMe/card/speakingBallon.png";
 import photo from "public/images/AboutMe/photo.png";
-
 
 export default function ProfissionalExperienceCard() {
   return (
 <div className={styles.cardContainer}>
-      {/* Top 70% */}
       <div className={styles.topSection}>
         <Image
-          src={ballon} // Replace with your image path
+          src={ballon} 
           alt="Ballon"
           fill
           className={styles.bgImage}
@@ -21,7 +19,6 @@ export default function ProfissionalExperienceCard() {
         </div>
       </div>
 
-      {/* Bottom 30% */}
       <div className={styles.bottomSection}>
         <p>Experiência Profissional</p>
       </div>
