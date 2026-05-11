@@ -16,31 +16,24 @@ export default function Home() {
             title={"Sobre mim"}
           />
         <section className={`${styles.flexVertical} ${styles.section}`}>
-
           <h1>Sobre mim</h1>
           <div className={styles.horizontalFlex}>
             <div className={styles.selfImg}>
-              <Image
-                src={photo}
-                alt="Sara image"
-                className={styles.selfImg}
-              />
+              <Image src={photo} alt="Sara image" className={styles.selfImg} />
             </div>
             <FormationTable />
-            
+
             <Image
-                src={logo}
-                width={800}
-                height={550}
-                alt="logo"
-                className={styles.logo}
-                priority
-              />
-
+              src={logo}
+              width={800}
+              height={550}
+              alt="logo"
+              className={styles.logo}
+              priority
+            />
           </div>
-
         </section>
-            <ProfessionalExperience />
+        <ProfessionalExperience />
       </div>
     </main>
   );
