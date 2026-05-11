@@ -3,18 +3,15 @@ import styles from "./page.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import photo from "public/images/AboutMe/photo.png";
 import logo from "public/images/logo.png";
-import FormationTable from "@/app/about-me/formationTable"
-import ProfessionalExperience from "@/app/about-me/ProfessionalExperience"
+import FormationTable from "@/app/about-me/formationTable";
+import ProfessionalExperience from "@/app/about-me/ProfessionalExperience";
 import ImageWText from "@/components/ImageWText/ImageWText";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-          <ImageWText
-            image={firstImg}
-            title={"Sobre mim"}
-          />
+        <ImageWText image={firstImg} title={"Sobre mim"} />
         <section className={`${styles.flexVertical} ${styles.section}`}>
           <h1>Sobre mim</h1>
           <div className={styles.horizontalFlex}>
