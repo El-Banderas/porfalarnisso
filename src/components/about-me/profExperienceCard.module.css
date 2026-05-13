@@ -1,9 +1,11 @@
 .card{
   border: 2px inset green;
   border-radius: 4%;
-  width: 50%;
+  width: 60%;
   background-color: #ED8762;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Experience card*/
@@ -13,7 +15,7 @@
   background-color: #ED8762;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 100%; /* Ensure parent flex container has a height set */
   margin: 0px 4px;
 }
@@ -47,6 +49,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  height: max-content;
 }
 /* Image card*/
 
@@ -68,10 +71,10 @@
 }
 /* General card*/
 .text {
-  font-size: 1rem;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  font-weight: lighter;
+  text-align: center;
 }
 .subtitle{
   text-align: center;
-  height: 30%;
 }

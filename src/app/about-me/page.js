@@ -6,6 +6,7 @@ import logo from "public/images/logo.png";
 import FormationTable from "@/app/about-me/formationTable";
 import ProfessionalExperience from "@/app/about-me/ProfessionalExperience";
 import ImageWText from "@/components/ImageWText/ImageWText";
+import Testimonies from "@/components/about-me/testimonies/Testimonies";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
           </div>
         </section>
         <ProfessionalExperience />
+        <Testimonies />
       </div>
     </main>
   );

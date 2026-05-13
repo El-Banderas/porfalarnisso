@@ -7,11 +7,15 @@ export default function ImageTextCard({ img, altTextImg, title, subtitle }) {
     <div className={styles.card}>
       <div className={styles.horizontalFlex}>
         <h3 className={styles.text}>{title}</h3>
-      <Image
-        src={img}
-        alt="house"
-        className={styles.image}
-      />
+        <Image
+          src={img}
+          alt="house"
+          className={styles.image}
+        />
+      </div>
+      <div className={styles.bottomSection}>
+        <p>{subtitle}</p>
+      </div>
     </div>
   );
 }
