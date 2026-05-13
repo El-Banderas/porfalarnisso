@@ -6,14 +6,9 @@ import photo from "public/images/AboutMe/photo.png";
 
 export default function ProfissionalExperienceCard() {
   return (
-<div className={styles.cardContainer}>
+    <div className={styles.cardContainer}>
       <div className={styles.topSection}>
-        <Image
-          src={ballon} 
-          alt="Ballon"
-          fill
-          className={styles.bgImage}
-        />
+        <Image src={ballon} alt="Ballon" fill className={styles.bgImage} />
         <div className={styles.overlayText}>
           <p>+ 10 anos</p>
         </div>

@@ -7,11 +7,19 @@ export default function Testimonies() {
     <section className={styles.section}>
       <h1>Testemunhos</h1>
       <div className={styles.testimonies}>
-
-      <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
-      <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
-      <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
-</div>
+        <TestimonyCard
+          text="Gosto muito das terapias, fazem muito bem!"
+          person="João Maria"
+        />
+        <TestimonyCard
+          text="Gosto muito das terapias, fazem muito bem!"
+          person="João Maria"
+        />
+        <TestimonyCard
+          text="Gosto muito das terapias, fazem muito bem!"
+          person="João Maria"
+        />
+      </div>
     </section>
   );
 }
