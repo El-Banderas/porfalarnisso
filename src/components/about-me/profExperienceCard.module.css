@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 100%; /* Ensure parent flex container has a height set */
+  height: 100%; 
   margin: 0px 4px;
 }
 

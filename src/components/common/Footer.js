@@ -23,7 +23,7 @@ export default function AboutMe() {
       <Flex direction={{ base: "column", xs: "row" }} gap="lg">
         {renderTitleSection(
           "Gabinete",
-          "Rua de qualquer coisa, porta, Vila Nova de Gaia",
+          "Rua de Trás 157 J, Vila Nova de Gaia"
         )}
         {renderTitleSection("Horário", "Segunda das 9h às 11h")}
       </Flex>

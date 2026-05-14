@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import photo from "public/images/AboutMe/photo.png";
-import logo from "public/images/logo.png";
+import logo from "public/images/logo_crop.png";
 import FormationTable from "@/app/about-me/formationTable";
 import ProfessionalExperience from "@/app/about-me/ProfessionalExperience";
 import ImageWText from "@/components/ImageWText/ImageWText";

@@ -8,7 +8,7 @@ export default function Testimonies() {
       <h1>Testemunhos</h1>
       <div className={styles.testimonies}>
 
-      <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
+      <TestimonyCard text="Gosto muito das terapias, fazem muito bem! Gosto muito das terapias, fazem muito bem!Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
       <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
       <TestimonyCard text="Gosto muito das terapias, fazem muito bem!" person="João Maria"/>
 </div>

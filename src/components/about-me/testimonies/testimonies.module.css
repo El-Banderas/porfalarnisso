@@ -9,11 +9,16 @@ padding-left: 5%;
 .testimonies{
   display: flex;
   flex-direction: row;
+  align-items: stretch;
   gap: 2%;
 }
 .card{
-
   background-color: antiquewhite;
-  flex: 1;
-  height: 100%;
+  padding: 2% 2%;
+    flex: 1 1 0;
+   /* max-width: 20vw;*/
+  border-radius: 20px;
+}
+.testimony{
+  height: 50%;
 }
