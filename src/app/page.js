@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-
 import { Button, Tooltip } from "@mantine/core";
 import { IconCheck, IconCopy } from "@tabler/icons-react";
 
