@@ -2,8 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 
-import { Button, Tooltip } from "@mantine/core";
-import { IconCheck, IconCopy } from "@tabler/icons-react";
+import ImageWText from "@/components/ImageWText/ImageWText";
 
 import mainPage1 from "public/images/MainPage1.png";
 import AboutMe from "@/components/mainPage/AboutMe.js";
@@ -15,14 +14,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <div className={styles.imgContainer}>
-          <Image
-            src={mainPage1}
-            alt="Office image"
-            className={styles.image}
-            style={{ objectFit: "cover" }}
+          <ImageWText
+            image={mainPage1}
+            title="Terapia da Fala"
+            textColor="#764932"
           />
-        </div>
         <AboutMe />
         <Specialisties />
       </div>

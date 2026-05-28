@@ -2,14 +2,29 @@
   position: relative;
   width: 25%;
 }
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
 .section2{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.cardImage{
+  height: 8vw;
+  width: auto;
+}
 @media (max-width: 768px) {
 .card{
   width: 95%;
+}
+
+.cardImage{
+  width: 30vw;
+  height: auto;
 }
 }

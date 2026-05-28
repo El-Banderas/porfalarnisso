@@ -8,6 +8,7 @@
 }
 .yearsCol{
   width: 30%;
+  text-align: right;
 }
 .formationCol{
   text-align: left;
@@ -19,4 +20,13 @@
 .tbody tr td {
   padding-top: 3%;
   padding-bottom: 3%;
+}
+@media (max-width: 768px),
+(max-height: 500px) {
+  .main{
+    width: 100%;
+  }
+.table{
+  border-spacing: 10px 0px;
+}
 }

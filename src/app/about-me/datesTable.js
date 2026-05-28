@@ -1,6 +1,6 @@
 import styles from "./table.module.css";
 
-export default function FormationTable() {
+export default function DatesTable({title, points}) {
   return (
     <main className={styles.main}>
       <table className={styles.table}>
@@ -8,23 +8,21 @@ export default function FormationTable() {
           <tr>
             <th scope="col" className={styles.yearsCol}></th>
             <th scope="col" className={styles.formationCol}>
-              <h2>Formação</h2>
+              <h2>{title}</h2>
             </th>
           </tr>
         </thead>
         <tbody className={styles.tbody}>
-          <tr>
-            <th>2020-2022</th>
-            <td>Foramção 1</td>
+        {points.map(([years, text2], index) => (
+          <tr key={index}>
+<th className={styles.yearsCol}>
+        {years.map((year, index) => (
+              <p key={index}>{year}</p>
+        ))}
+</th>
+            <td>{text2}</td>
           </tr>
-          <tr>
-            <th>2020-2022</th>
-            <td>Foramção 1</td>
-          </tr>
-          <tr>
-            <th>2020-2022</th>
-            <td>Foramção 1</td>
-          </tr>
+        ))}
         </tbody>
       </table>
     </main>

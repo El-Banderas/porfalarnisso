@@ -23,3 +23,15 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px),
+(max-height: 500px) {
+.cards{
+  flex-direction: column;
+  gap: 5%;
+  width: 100%;
+}
+.logoContainer{
+  width: 1%;
+  visibility: hidden;
+}
+}

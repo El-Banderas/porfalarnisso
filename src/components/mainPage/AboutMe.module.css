@@ -32,12 +32,13 @@ width:30vw;
   width: 10vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px),
+(max-height: 500px) {
   .section{
     height: auto;
   }
   .img {
-    width: 50vw;
+    width: 40vw;
   }
 
 .text{
@@ -47,11 +48,12 @@ width:30vw;
 }
 
 .btn{
-  width: 50vw;
+  width: 40vw;
+
 }
 .rightContent{
   margin-left: 0%;
-  width: 60%;
+  width: 70%;
   margin-top: 5%;
   margin-bottom: 1vh;
 }

@@ -78,3 +78,6 @@
 .subtitle{
   text-align: center;
 }
+@media (max-width: 768px),
+(max-height: 500px) {
+}

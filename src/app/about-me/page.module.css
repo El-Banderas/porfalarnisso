@@ -1,9 +1,7 @@
-
-
 .main {
-display: flex;
-flex-direction: column;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .image {
@@ -14,7 +12,8 @@ position: relative;
 
 .section {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a background for readability */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Optional: adds a background for readability */
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
@@ -22,34 +21,54 @@ position: relative;
   margin-bottom: 10%;
 }
 
-.flexVertical {
-display: flex;
-flex-direction: column;
+.aboutMe {
+  display: flex;
+  flex-direction: column;
 }
 
-.horizontalFlex {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .table {
-display: flex;
-flex-direction: column;
-background-color: red;
-width: 30%;
-}
-.rowTable {
-display: flex;
-flex-direction: row;
-}
-.selfImg{
-height: auto;
-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
-.logo{
-  width: 20vw; 
+.rowTable {
+  display: flex;
+  flex-direction: row;
+}
+
+.selfImg {
+  height: auto;
+  width: 20vw;
+}
+
+.logo {
+  width: 20vw;
   height: fit-content;
   align-self: flex-end;
+}
+
+@media (max-width: 768px),
+(max-height: 500px) {
+
+  .selfImg {
+    width: 60vw;
+    margin-bottom: 1vh;
+  }
+
+  .dates {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: 2% 0 2% 0;
+    width: 70vw;
+    align-self: center;
+  }
 }

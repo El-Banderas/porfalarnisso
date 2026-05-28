@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import { Card, Text, Badge, Button, Group } from "@mantine/core";
-import kidImage from "public/images/kidsSpeciality.png";
 import { ActionIcon } from "@mantine/core";
 import { IconArrowBadgeRightFilled } from "@tabler/icons-react";
 import classes from "./SpecialitiyCard.module.css";
 
-export default function SpecialityCard({ title }) {
+export default function SpecialityCard({ title, image }) {
   return (
     <Card
       shadow="sm"
@@ -15,14 +14,15 @@ export default function SpecialityCard({ title }) {
       withBorder
       className={classes.card}
     >
-      <Group justify="space-between" mt="md" mb="xs">
+
+      <div className={classes.firstRow}>
         <Text size="xl" fw={500}>
           {title}
         </Text>
-      </Group>
-      <Card.Section>
-        <Image src={kidImage} alt="Kids playing" />
-      </Card.Section>
+        <Image src={image} alt="Kids playing"
+        className={classes.cardImage}
+        />
+      </div>
 
       <Text size="sm" c="dimmed">
         With Fjord Tours you can explore more of the magical fjord landscapes
