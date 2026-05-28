@@ -14,14 +14,11 @@ export default function SpecialityCard({ title, image }) {
       withBorder
       className={classes.card}
     >
-
       <div className={classes.firstRow}>
         <Text size="xl" fw={500}>
           {title}
         </Text>
-        <Image src={image} alt="Kids playing"
-        className={classes.cardImage}
-        />
+        <Image src={image} alt="Kids playing" className={classes.cardImage} />
       </div>
 
       <Text size="sm" c="dimmed">

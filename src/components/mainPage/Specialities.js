@@ -17,9 +17,12 @@ export default function AboutMe() {
           justify="space-between"
           direction={{ base: "column", xs: "row" }}
         >
-          <SpecialityCard title="Crianças" image={kidImage}/>
-          <SpecialityCard title="Adultos" image={adultImage}/>
-          <SpecialityCard title="Co-terapia & Pares Terapêuticos" image={groupImage}/>
+          <SpecialityCard title="Crianças" image={kidImage} />
+          <SpecialityCard title="Adultos" image={adultImage} />
+          <SpecialityCard
+            title="Co-terapia & Pares Terapêuticos"
+            image={groupImage}
+          />
         </Flex>
       </Flex>
     </section>
