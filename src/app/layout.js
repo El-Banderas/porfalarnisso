@@ -1,4 +1,4 @@
-import { Elms_Sans } from 'next/font/google';
+import { Elms_Sans } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
@@ -7,8 +7,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/common/Footer.js";
 
 const elmsSans = Elms_Sans({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
 });
 
 // TODO: Change this!!!
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           <Navbar />
 
           {children}
-        <Footer />
+          <Footer />
         </MantineProvider>
       </body>
     </html>
