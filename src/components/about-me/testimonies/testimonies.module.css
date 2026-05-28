@@ -22,3 +22,10 @@ padding-left: 5%;
 .testimony{
   height: 50%;
 }
+@media (max-width: 768px),
+(max-height: 500px) {
+.testimonies{
+flex-direction: column;
+gap: 20px;
+}
+}
