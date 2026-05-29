@@ -6,8 +6,10 @@ export default function DatesTable({ title, points }) {
       <h2>{title}</h2>
       {points.map(([years, text2], index) => (
         <div key={index}>
-          <div >
-          <p>{years[0]}-{years[1]}</p>
+          <div>
+            <p>
+              {years[0]}-{years[1]}
+            </p>
           </div>
           <div>{text2}</div>
         </div>

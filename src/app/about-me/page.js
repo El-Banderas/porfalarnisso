@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import photo from "public/images/AboutMe/photo.png";
@@ -14,14 +14,11 @@ import Testimonies from "@/components/about-me/testimonies/Testimonies";
 import { checkIsMobile } from "@/app/utils/isMobile";
 
 export default function Home() {
-    const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(checkIsMobile(window))
-  }, []
-  );
-
-
+    setIsMobile(checkIsMobile(window));
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -33,35 +30,43 @@ export default function Home() {
             <div className={styles.selfImg}>
               <Image src={photo} alt="Sara image" className={styles.selfImg} />
             </div>
-            {
-              isMobile ? 
-              
-            <DatesTableMobile
-              title="Experiência"
-              points={[[["Agosto/2020","Atualmente"], "Clínica Terapêutica Pronunciar - Paços de Brandão"],
-              [["Setembro/2018","Março/2023"], "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia"],
-              [["Julho/2016","Setembro/2016"], "Instituto Luso-Cubano de Neurologia, Porto (part-time)"]]}
-            />
-              :
-            <DatesTable
-              title="Experiência"
-              points={[
-                [
-                  ["Agosto/2020", "Atualmente"],
-                  "Clínica Terapêutica Pronunciar - Paços de Brandão",
-                ],
-                [
-                  ["Setembro/2018", "Março/2023"],
-                  "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia",
-                ],
-                [
-                  ["Julho/2016", "Setembro/2016"],
-                  "Instituto Luso-Cubano de Neurologia, Porto (part-time)",
-                ],
-              ]}
-            />
-
-            }
+            {isMobile ? (
+              <DatesTableMobile
+                title="Experiência"
+                points={[
+                  [
+                    ["Agosto/2020", "Atualmente"],
+                    "Clínica Terapêutica Pronunciar - Paços de Brandão",
+                  ],
+                  [
+                    ["Setembro/2018", "Março/2023"],
+                    "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia",
+                  ],
+                  [
+                    ["Julho/2016", "Setembro/2016"],
+                    "Instituto Luso-Cubano de Neurologia, Porto (part-time)",
+                  ],
+                ]}
+              />
+            ) : (
+              <DatesTable
+                title="Experiência"
+                points={[
+                  [
+                    ["Agosto/2020", "Atualmente"],
+                    "Clínica Terapêutica Pronunciar - Paços de Brandão",
+                  ],
+                  [
+                    ["Setembro/2018", "Março/2023"],
+                    "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia",
+                  ],
+                  [
+                    ["Julho/2016", "Setembro/2016"],
+                    "Instituto Luso-Cubano de Neurologia, Porto (part-time)",
+                  ],
+                ]}
+              />
+            )}
             <Image
               src={logo}
               width={800}
