@@ -7,7 +7,7 @@
   padding-top: 0px;
 }
 .yearsCol{
-  width: 30%;
+  width: 20%;
   text-align: right;
 }
 .formationCol{
@@ -21,6 +21,13 @@
   padding-top: 3%;
   padding-bottom: 3%;
 }
+.group{
+  padding-top: 4%;
+}
+.year{
+  font-weight: bold;
+}
+
 @media (max-width: 768px),
 (max-height: 500px) {
   .main{

@@ -14,7 +14,7 @@ padding-left: 5%;
 }
 .card{
   background-color: antiquewhite;
-  padding: 2% 2%;
+  padding: 10px 2%;
     flex: 1 1 0;
    /* max-width: 20vw;*/
   border-radius: 20px;
@@ -27,5 +27,17 @@ padding-left: 5%;
 .testimonies{
 flex-direction: column;
 gap: 20px;
+}
+.card{
+  padding-bottom: 4%;
+  flex: none;
+  display: block;
+}
+.line{
+  padding-bottom: 0 px;
+  margin-bottom: 0 px
+}
+.author{
+  margin-bottom: 2%;
 }
 }

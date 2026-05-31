@@ -18,8 +18,8 @@ export default function ProfissionalExperience() {
           <ImageTextCard
             img={house}
             altTextImg={"House icon"}
-            title={"2 clínicas"}
-            subtitle={"Terapia com adultos"}
+            titles={["Clínica", "Escola", "Domícilio"]}
+            subtitle={"Pediatria"}
           />
         </div>
 
@@ -27,8 +27,8 @@ export default function ProfissionalExperience() {
           <ImageTextCard
             img={girlPlaying}
             altTextImg={"Girl playing image"}
-            title={"6 clínicas"}
-            subtitle={"Terapia com crianças"}
+            titles={["Adultos", "Crianças"]}
+            subtitle={"Especialização Avançada"}
           />
         </div>
 
@@ -36,15 +36,14 @@ export default function ProfissionalExperience() {
           <ImageTextCard
             img={girlPlaying}
             altTextImg={"Girl playing image"}
-            title={"Autismo?"}
-            subtitle={"Algo sobre crianças c/ autismo"}
+            titles={["Certificado","CCP"]}
+            subtitle={"Formadora certificada"}
           />
         </div>
       </div>
       <div className={styles.logoContainer}>
         <Image src={logo} alt="logo" />
       </div>
-      <section></section>
     </main>
   );
 }

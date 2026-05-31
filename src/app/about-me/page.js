@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "./page.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import photo from "public/images/AboutMe/photo.png";
@@ -14,14 +14,36 @@ import Testimonies from "@/components/about-me/testimonies/Testimonies";
 import { checkIsMobile } from "@/app/utils/isMobile";
 
 export default function Home() {
-    const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setIsMobile(checkIsMobile(window))
   }, []
   );
 
+  const experience = [[["2022"], "Clínica Terapêutica Pronunciar - Paços de Brandão e Espinho"],
+                  [["2018"], "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia"],
+                  [["2016"], "Instituto Luso-Cubano de Neurologia - Porto"],
+                  [["2016"], "Prática profissional: Centro de Reabilitação do Norte - Santa Casa da Misericórdia do Porto"]]
 
+  const formation = [
+                [
+                  ["2025"],
+                  'Oradora nas Jornadas de Neurodesenvolvimento da clínica Pronunciar com a temática "Descomplicar a comunicação na Perturbação no Espetro do Autismo"',
+                ],
+                [
+                  ["2023"],
+                  "Especialização Avançada em Terapia da Fala em Contextos de Saúde ministrada pelo Instituto CRIAP",
+                ],
+                [
+                  ["2019"],
+                  'Pós-Graduação na área do autismo - "Trabalho Multidisciplinar no Autismo", ministrado pelo Instituto CRIAP',
+                ],
+                [
+                  ["2016"],
+                  "Licenciatura em Terapia da Fala pela Escola Superior de Saúde da Universidade de Aveiro",
+                ],
+              ]
 
   return (
     <main className={styles.main}>
@@ -34,32 +56,17 @@ export default function Home() {
               <Image src={photo} alt="Sara image" className={styles.selfImg} />
             </div>
             {
-              isMobile ? 
-              
-            <DatesTableMobile
-              title="Experiência"
-              points={[[["Agosto/2020","Atualmente"], "Clínica Terapêutica Pronunciar - Paços de Brandão"],
-              [["Setembro/2018","Março/2023"], "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia"],
-              [["Julho/2016","Setembro/2016"], "Instituto Luso-Cubano de Neurologia, Porto (part-time)"]]}
-            />
-              :
-            <DatesTable
-              title="Experiência"
-              points={[
-                [
-                  ["Agosto/2020", "Atualmente"],
-                  "Clínica Terapêutica Pronunciar - Paços de Brandão",
-                ],
-                [
-                  ["Setembro/2018", "Março/2023"],
-                  "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia",
-                ],
-                [
-                  ["Julho/2016", "Setembro/2016"],
-                  "Instituto Luso-Cubano de Neurologia, Porto (part-time)",
-                ],
-              ]}
-            />
+              isMobile ?
+
+                <DatesTableMobile
+                  title="Experiência"
+                  points={experience}
+                />
+                :
+                <DatesTable
+                  title="Experiência"
+                  points={experience}
+                />
 
             }
             <Image
@@ -74,28 +81,20 @@ export default function Home() {
         </section>
         <section className={`${styles.aboutMe} ${styles.section}`}>
           <div className={styles.dates}>
-            <DatesTable
-              title="Formação"
-              points={[
-                [
-                  ["15 de março de 2025"],
-                  'Participação nas Jornadas de Neurodesenvolvimento da clínica Pronunciar com a temática "Descomplicar a comunicação na PEA"',
-                ],
-                [
-                  ["Fevereiro/2023", "Novembro/2023"],
-                  "Especialização Avançada em Terapia da Fala em Contextos de Saúde ministrada pelo Instituto CRIAP, com nota final de 18 valores",
-                ],
-                [
-                  ["Junho/2019"],
-                  'Pós-Graduação na área do autismo - "Trabalho Multidisciplinar no Autismo", ministrado pelo Instituto CRIAP',
-                ],
-                [
-                  ["Setembro/2019", "Julho/2016"],
-                  "Licenciatura em Terapia da Fala pela Escola Superior de Saúde da Universidade de Aveiro",
-                ],
-              ]}
-            />
+{
+              isMobile ?
 
+                <DatesTableMobile
+                  title="Formação"
+                  points={formation}
+                />
+                :
+                <DatesTable
+                  title="Formação"
+                  points={formation}
+                />
+
+            }
             <div className={styles.selfImg}>
               <Image
                 src={photoFormation}

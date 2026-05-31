@@ -5,9 +5,9 @@ export default function DatesTable({ title, points }) {
     <main className={styles.main}>
       <h2>{title}</h2>
       {points.map(([years, text2], index) => (
-        <div key={index}>
+        <div key={index} className={styles.group}>
           <div >
-          <p>{years[0]}-{years[1]}</p>
+          <p className={styles.year}>{years[0]}{years[1]}</p>
           </div>
           <div>{text2}</div>
         </div>

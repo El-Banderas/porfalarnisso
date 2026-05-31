@@ -12,10 +12,11 @@ export default function TestimonyCard({ text, person }) {
       <Divider
         my="md"
         color="gray"
+        className={styles.line}
         labelPosition="center"
         label={<IconQuoteFilled color="gray" />}
       />
-      <label>{person}</label>
+      <label className={styles.author}>{person}</label>
     </div>
   );
 }
