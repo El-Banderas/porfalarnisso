@@ -36,7 +36,7 @@ export default function ProfissionalExperience() {
           <ImageTextCard
             img={girlPlaying}
             altTextImg={"Girl playing image"}
-            titles={["Certificado","CCP"]}
+            titles={["Certificado", "CCP"]}
             subtitle={"Formadora certificada"}
           />
         </div>
