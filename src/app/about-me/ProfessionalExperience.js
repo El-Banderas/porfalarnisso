@@ -4,6 +4,7 @@ import Image from "next/image";
 import ImageTextCard from "@/components/about-me/ImageTextCard";
 import house from "public/images/AboutMe/card/house.png";
 import girlPlaying from "public/images/AboutMe/card/girlPlaying.png";
+import certificate from "public/images/AboutMe/card/certificate.png";
 import logo from "public/images/logo.png";
 
 export default function ProfissionalExperience() {
@@ -34,8 +35,8 @@ export default function ProfissionalExperience() {
 
         <div className={styles.card}>
           <ImageTextCard
-            img={girlPlaying}
-            altTextImg={"Girl playing image"}
+            img={certificate}
+            altTextImg={"Certificate draw"}
             titles={["Certificado","CCP"]}
             subtitle={"Formadora certificada"}
           />

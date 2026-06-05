@@ -1,56 +1,79 @@
 .card{
   border: 2px inset green;
   border-radius: 4%;
-  width: 60%;
+  width: 65%;
   background-color: #ED8762;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Ensures child borders don't bleed out */
+
+  margin: 0px auto; /* Centers it nicely */
 }
 
 /* Experience card*/
+
+
 .cardContainer {
-  border: 2px inset green;
-  border-radius: 4%;
+  border: 2px solid green; /* Changed from inset to solid to match your screenshot */
+  border-radius: 16px; 
   background-color: #ED8762;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 100%; 
-  margin: 0px 4px;
+  
+  width: 65%;
+  height: 100%;
+  overflow: hidden; 
+  box-sizing: border-box;
+  margin: 0px auto; /* Centers it nicely */
 }
 
 .topSection {
   background-color: #dccd91;
-  position: relative; /* Mandatory for Next.js Image with 'fill' */
-  flex: 0 0 70%;
+  position: relative; 
+  
+  /* FIX: Give it a minimum aspect ratio or fixed height baseline so the balloon fits */
+  width: auto;
+  height: 70%; 
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  border-bottom: 2px solid green;
 }
 
 .bgImage {
-  object-fit: contain;
+  /* FIX: Changed to 'contain' so the image shrinks to fit the container without cropping */
+  object-fit: contain; 
   z-index: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .overlayText {
-  position: relative; /* Lifts text above the image's absolute positioning */
+  position: relative; 
   z-index: 10;
   color: white;
   text-align: center;
   font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .bottomSection {
-  flex: 1; /* Takes the remaining 30% */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  height: max-content;
+  padding: 16px;
+  background-color: #ED8762;
 }
+
+.bottomSection p {
+  margin: 0;
+  font-family: sans-serif;
+  color: #000000;
+}
+
 /* Image card*/
 
 .horizontalFlex{
@@ -85,4 +108,11 @@
 }
 @media (max-width: 768px),
 (max-height: 500px) {
+  .cardContainer{
+    height: min-content;
+  }
+  .topSection{
+    min-height: 120px;
+  }
+
 }
