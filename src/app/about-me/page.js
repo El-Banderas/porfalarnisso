@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import photo from "public/images/AboutMe/photo.png";
@@ -17,33 +17,40 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(checkIsMobile(window))
-  }, []
-  );
+    setIsMobile(checkIsMobile(window));
+  }, []);
 
-  const experience = [[["2022"], "Clínica Terapêutica Pronunciar - Paços de Brandão e Espinho"],
-                  [["2018"], "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia"],
-                  [["2016"], "Instituto Luso-Cubano de Neurologia - Porto"],
-                  [["2016"], "Prática profissional: Centro de Reabilitação do Norte - Santa Casa da Misericórdia do Porto"]]
+  const experience = [
+    [["2022"], "Clínica Terapêutica Pronunciar - Paços de Brandão e Espinho"],
+    [
+      ["2018"],
+      "GASC (Grupos de Autonomia e Socialização em Contexto) da APPDA-norte - Gaia",
+    ],
+    [["2016"], "Instituto Luso-Cubano de Neurologia - Porto"],
+    [
+      ["2016"],
+      "Prática profissional: Centro de Reabilitação do Norte - Santa Casa da Misericórdia do Porto",
+    ],
+  ];
 
   const formation = [
-                [
-                  ["2025"],
-                  'Oradora nas Jornadas de Neurodesenvolvimento da clínica Pronunciar com a temática "Descomplicar a comunicação na Perturbação no Espetro do Autismo"',
-                ],
-                [
-                  ["2023"],
-                  "Especialização Avançada em Terapia da Fala em Contextos de Saúde ministrada pelo Instituto CRIAP",
-                ],
-                [
-                  ["2019"],
-                  'Pós-Graduação na área do autismo - "Trabalho Multidisciplinar no Autismo", ministrado pelo Instituto CRIAP',
-                ],
-                [
-                  ["2016"],
-                  "Licenciatura em Terapia da Fala pela Escola Superior de Saúde da Universidade de Aveiro",
-                ],
-              ]
+    [
+      ["2025"],
+      'Oradora nas Jornadas de Neurodesenvolvimento da clínica Pronunciar com a temática "Descomplicar a comunicação na Perturbação no Espetro do Autismo"',
+    ],
+    [
+      ["2023"],
+      "Especialização Avançada em Terapia da Fala em Contextos de Saúde ministrada pelo Instituto CRIAP",
+    ],
+    [
+      ["2019"],
+      'Pós-Graduação na área do autismo - "Trabalho Multidisciplinar no Autismo", ministrado pelo Instituto CRIAP',
+    ],
+    [
+      ["2016"],
+      "Licenciatura em Terapia da Fala pela Escola Superior de Saúde da Universidade de Aveiro",
+    ],
+  ];
 
   return (
     <main className={styles.main}>
@@ -55,20 +62,11 @@ export default function Home() {
             <div className={styles.selfImg}>
               <Image src={photo} alt="Sara image" className={styles.selfImg} />
             </div>
-            {
-              isMobile ?
-
-                <DatesTableMobile
-                  title="Experiência"
-                  points={experience}
-                />
-                :
-                <DatesTable
-                  title="Experiência"
-                  points={experience}
-                />
-
-            }
+            {isMobile ? (
+              <DatesTableMobile title="Experiência" points={experience} />
+            ) : (
+              <DatesTable title="Experiência" points={experience} />
+            )}
             <Image
               src={logo}
               width={800}
@@ -81,20 +79,11 @@ export default function Home() {
         </section>
         <section className={`${styles.aboutMe} ${styles.section}`}>
           <div className={styles.dates}>
-{
-              isMobile ?
-
-                <DatesTableMobile
-                  title="Formação"
-                  points={formation}
-                />
-                :
-                <DatesTable
-                  title="Formação"
-                  points={formation}
-                />
-
-            }
+            {isMobile ? (
+              <DatesTableMobile title="Formação" points={formation} />
+            ) : (
+              <DatesTable title="Formação" points={formation} />
+            )}
             <div className={styles.selfImg}>
               <Image
                 src={photoFormation}
