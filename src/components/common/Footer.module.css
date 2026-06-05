@@ -4,13 +4,12 @@
   color: #faefe0;
   padding-left: 5%;
   padding-bottom: 5%;
+  padding-top: 1%;
 }
 .img{
-  margin-top: 3%;
-  margin-bottom: 3%;
   position: relative;
 width:16vw;
-aspect-ratio: 114/100;
+aspect-ratio: 120/100;
 }
 
 @media (max-width: 768px) {
