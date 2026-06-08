@@ -14,17 +14,21 @@ export default function AboutMe() {
 
   return (
     <section className={classes.section}>
-<Flex direction={{ base: "column", xs: "row" }} justify={"space-between"} gap="lg">
-
-
-      <Flex direction={{ base: "column", xs: "row" }} gap="3vw">
-        {renderTitleSection("Gabinete", "Rua de Trás 157 J, Vila Nova de Gaia")}
-        {renderTitleSection("Horário", "Segunda das 9h às 11h")}
-      </Flex>
+      <Flex
+        direction={{ base: "column", xs: "row" }}
+        justify={"space-between"}
+        gap="lg"
+      >
+        <Flex direction={{ base: "column", xs: "row" }} gap="3vw">
+          {renderTitleSection(
+            "Gabinete",
+            "Rua de Trás 157 J, Vila Nova de Gaia",
+          )}
+          {renderTitleSection("Horário", "Segunda das 9h às 11h")}
+        </Flex>
         <div className={classes.img}>
           <Image src={logo} alt="Logo" fill />
         </div>
-
       </Flex>
     </section>
   );
