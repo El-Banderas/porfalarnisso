@@ -1,0 +1,7 @@
+.btnsSection{
+  background-color: var(--mantine-color-my-orange-5) ;
+  color: var(--mantine-color-font-white-5);
+}
+.content{
+  margin: 0px 1%;
+}

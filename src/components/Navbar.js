@@ -30,10 +30,10 @@ const links = [
     ],
   },
   {
-    link: "#2",
+    link: "/children",
     label: "Crianças",
     links: [
-      { link: "/s1", label: "Opção 1" },
+      { link: "/children", label: "Opção 1" },
       { link: "/s2", label: "Opção 2" },
     ],
   },

@@ -1,0 +1,18 @@
+.btns{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.btn{
+  background-color: var(--mantine-color-font-white-5);
+  color: black;
+  min-width: 10vw;
+  max-width: 20vw;
+}
+@media (max-width: 768px) {
+  .btn{
+    min-width: 30vw;
+  }
+}
