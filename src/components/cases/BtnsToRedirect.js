@@ -4,8 +4,6 @@ import { IconChevronRight } from "@tabler/icons-react";
 import styles from "./Cases.module.css";
 
 export default function Home({ sections }) {
-  
-
   return (
     <div className={styles.btns}>
       {sections.map((item, index) => (

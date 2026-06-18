@@ -6,7 +6,7 @@ import BtnsToRedirect from "@/components/cases/BtnsToRedirect";
 import Case from "@/components/cases/Case";
 
 export default function Home() {
-const sections = [
+  const sections = [
     {
       name: "Problema 1",
       description: "Description of problem ......",
@@ -29,10 +29,10 @@ const sections = [
         <Case
           id="problema-1"
           style={{ padding: "20px" }}
-        section={sections[0]}
+          section={sections[0]}
         />
 
-                  <section
+        <section
           id="problema-2"
           style={{ marginTop: "100vh", padding: "20px" }}
         >
