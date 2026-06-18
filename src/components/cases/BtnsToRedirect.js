@@ -3,19 +3,8 @@ import { NavLink } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import styles from "./Cases.module.css";
 
-export default function Home({ titles }) {
-  const sections = [
-    {
-      name: "Problema 1",
-      description: "Description of problem ......",
-      anchor: "#problema-1",
-    },
-    {
-      name: "Problem 2",
-      description: "Description of problem ......",
-      anchor: "#problema-2",
-    },
-  ];
+export default function Home({ sections }) {
+  
 
   return (
     <div className={styles.btns}>

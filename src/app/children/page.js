@@ -3,10 +3,20 @@ import styles from "./childrenPage.module.css";
 import firstImg from "public/images/AboutMe/first.png";
 import ImageWText from "@/components/ImageWText/ImageWText";
 import BtnsToRedirect from "@/components/cases/BtnsToRedirect";
+import Case from "@/components/cases/Case";
 
 export default function Home() {
-  const sections = [
-    { name: "Problema 1", description: "Descrição do problema ......" },
+const sections = [
+    {
+      name: "Problema 1",
+      description: "Description of problem ......",
+      anchor: "#problema-1",
+    },
+    {
+      name: "Problem 2",
+      description: "Description of problem ......",
+      anchor: "#problema-2",
+    },
   ];
   return (
     <main className={styles.btnsSection}>
@@ -14,17 +24,15 @@ export default function Home() {
       <div className={styles.content}>
         <section>
           <h1>Áreas de intervenção </h1>
-          <BtnsToRedirect list="sections" />
+          <BtnsToRedirect sections={sections} />
         </section>
-        <section
+        <Case
           id="problema-1"
-          style={{ marginTop: "100vh", padding: "20px" }}
-        >
-          <h2>Problema 1</h2>
-          <p>Content for the first problem goes here...</p>
-        </section>
+          style={{ padding: "20px" }}
+        section={sections[0]}
+        />
 
-        <section
+                  <section
           id="problema-2"
           style={{ marginTop: "100vh", padding: "20px" }}
         >
