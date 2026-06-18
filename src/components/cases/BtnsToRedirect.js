@@ -13,7 +13,7 @@ export default function Home({ sections }) {
           key={index}
           className={styles.btn}
           component="a"
-          href={item.anchor}
+          href={`#${index}`}
           label={item.name}
           description={item.description}
           rightSection={<IconChevronRight size="1rem" stroke={1.5} />}
