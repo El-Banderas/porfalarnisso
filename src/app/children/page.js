@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <main className={styles.btnsSection}>
       <ImageWText image={firstImg} title={"Crianças"} />
-      <div className={styles.content}>
+      <div >
         <section>
-          <h1>Áreas de intervenção </h1>
+          <h1 className={styles.title}>Áreas de intervenção </h1>
           <BtnsToRedirect sections={sections} />
         </section>
         {sections.map((item, index) => (
@@ -34,6 +34,7 @@ export default function Home() {
             id={index}
           href={`#${index}`}
             section={item}
+          altStyle={index % 2 == 0}
           />
         ))
         }
