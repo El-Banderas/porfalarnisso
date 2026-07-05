@@ -9,6 +9,6 @@ export default function Case({ id, section, altStyle }) {
       <h4>{section.description}</h4>
 
       <Image src={section.image} alt={section.title} className={styles.img} />
-  </div>
+    </div>
   );
 }

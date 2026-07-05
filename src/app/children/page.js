@@ -12,12 +12,18 @@ export default function Home() {
     name: "Problema 1",
     description: "Description of problem ......",
     anchor: "#problema-1",
-    image: img
-  }
+    image: img,
+  };
   const sections = [
-    genericProblem, genericProblem, genericProblem,
-    genericProblem, genericProblem, genericProblem,
-    genericProblem, genericProblem, genericProblem
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
+    genericProblem,
   ];
   return (
     <main className={styles.btnsSection}>
@@ -29,16 +35,14 @@ export default function Home() {
         </section>
         {sections.map((item, index) => (
           <Case
-          key={index}
+            key={index}
             style={{ padding: "20px" }}
             id={index}
-          href={`#${index}`}
+            href={`#${index}`}
             section={item}
           altStyle={index % 2 == 0}
           />
-        ))
-        }
-
+        ))}
       </div>
     </main>
   );
