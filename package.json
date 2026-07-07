@@ -11,6 +11,8 @@
     "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
+    "@mantine/core": "^9.4.1",
+    "@mantine/hooks": "^9.4.1",
     "@tabler/icons-react": "^3.37.1",
     "@tabler/icons-vue": "^3.44.0",
     "next": "16.1.6",
