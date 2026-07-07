@@ -17,6 +17,7 @@ import {
   Accordion,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import Link from 'next/link';
 import classes from "./Navbar.module.css";
 
 const links = [
@@ -57,12 +58,12 @@ export default function Navbar() {
           withinPortal
         >
           <Menu.Target>
-            <a href={link.link} className={classes.link}>
+            <Link href={link.link} className={classes.link}>
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size={14} stroke={1.5} />
               </Center>
-            </a>
+            </Link>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
