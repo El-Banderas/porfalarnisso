@@ -21,7 +21,7 @@ import Link from "next/link";
 import classes from "./Navbar.module.css";
 
 const links = [
-  { link: "porfalarnisso/about-me", label: "Sobre mim" },
+  { link: "about-me", label: "Sobre mim" },
   {
     link: "#1",
     label: "Adultos",
@@ -31,7 +31,7 @@ const links = [
     ],
   },
   {
-    link: "/children",
+    link: "children",
     label: "Crianças",
     links: [
       { link: "/children", label: "Opção 1" },
