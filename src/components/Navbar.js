@@ -21,7 +21,7 @@ import Link from 'next/link';
 import classes from "./Navbar.module.css";
 
 const links = [
-  { link: "/about-me", label: "Sobre mim" },
+  { link: "porfalarnisso/about-me", label: "Sobre mim" },
   {
     link: "#1",
     label: "Adultos",
@@ -120,7 +120,7 @@ export default function Navbar() {
     <header className={classes.header}>
       <Container fluid color="my-orange">
         <div className={classes.inner}>
-          <a href={"/"}>
+          <a href={"/porfalarnisso"}>
             <IconSeedlingFilled size={28} href={"/asd"} />
           </a>
 
